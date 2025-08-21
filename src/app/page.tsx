@@ -1,7 +1,6 @@
 import { auth } from "@/auth";
 import { db } from "@/db/index";
 import { audios } from "@/db/schema";
-import { AuthButton } from "@/components/AuthButton";
 import { SoundButton } from "./SoundButton";
 import { AudioViewer } from "./AudioViewer";
 import { Input } from "@/components/ui/input";
