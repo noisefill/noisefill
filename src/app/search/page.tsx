@@ -15,12 +15,12 @@ export const metadata = {
   description: "Search for audio",
 };
 
-export default async function SearchPage({
-  searchParams,
-}: {
-  searchParams: { q: string };
-}) {
-  const { q } = searchParams;
+interface SearchPageProps {
+  searchParams?: { [key: string]: string | string[] | undefined };
+}
+
+export default async function SearchPage({ searchParams }: SearchPageProps) {
+  const q = searchParams?.q as string;
   const results = await index.search({ query: q });
   return (
     <div className="w-full max-w-lg mx-auto py-12">
