@@ -16,12 +16,12 @@ export const metadata = {
 };
 
 interface SearchPageProps {
-  searchParams?: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ q?: string }>; // ✅ searchParams as a Promise
 }
 
 export default async function SearchPage({ searchParams }: SearchPageProps) {
-  const q = searchParams?.q as string;
-  const results = await index.search({ query: q });
+  const { q } = await searchParams;
+  const results = await index.search({ query: q ?? "" });
   return (
     <div className="w-full max-w-lg mx-auto py-12">
       <form
