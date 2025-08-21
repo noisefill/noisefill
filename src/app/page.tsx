@@ -7,6 +7,7 @@ import { AudioViewer } from "./AudioViewer";
 import { Input } from "@/components/ui/input";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import FeaturebaseMessenger from "@/components/Featurebase";
 
 export async function generateMetadata() {
   const session = await auth();
@@ -45,7 +46,7 @@ export default async function Page() {
           >
             <Input type="text" placeholder="Search" name="query" />
           </form>
-          <AuthButton session={session ?? null} />
+          {/* <AuthButton session={session ?? null} /> */}
         </div>
       </div>
       <div className="w-full flex flex-col gap-1 pt-1">
@@ -87,6 +88,10 @@ export default async function Page() {
         .
       </p>
       <footer className="text-sm text-muted-foreground pt-2 flex gap-1.25">
+        <Link href="/privacy" className="hover:text-foreground">
+          Privacy
+        </Link>
+        <span>•</span>
         <a
           href="mailto:hi@noisefill.com"
           target="_blank"
@@ -103,6 +108,7 @@ export default async function Page() {
           GitHub repo
         </a>
       </footer>
+      <FeaturebaseMessenger />
     </div>
   );
 }

@@ -1,6 +1,10 @@
 export const metadata = {
   title: "Terms of Service - Noisefill",
   description: "We don't have one.",
+  robots: {
+    index: "noindex",
+    follow: "noindex",
+  },
 };
 
 export default function Tos() {

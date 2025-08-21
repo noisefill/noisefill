@@ -41,8 +41,8 @@ export function AuthButton({ session }: { session: Session | null }) {
   }
 
   return (
-    <Link href="/signin">
+    <a href="/signin">
       <Button>Sign in</Button>
-    </Link>
+    </a>
   );
 }

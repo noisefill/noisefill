@@ -7,6 +7,8 @@ export default async function SignIn() {
   const session = await auth();
   if (session) {
     redirect("/");
+  } else {
+    redirect("/not-available");
   }
   return (
     <div className="w-full max-w-[350px] mx-auto py-12 text-center">
