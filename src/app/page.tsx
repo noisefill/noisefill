@@ -71,15 +71,9 @@ export default async function Page() {
       </div>
       <br />
       <p className="text-sm text-muted-foreground">
-        Soundscapes on Noisefill are created by various authors on{" "}
-        <a
-          href="https://freesound.org"
-          target="_blank"
-          className="text-blue-500 hover:underline"
-        >
-          freesound.org
-        </a>{" "}
-        who have released their work into the public domain. To view
+        Soundscapes on Noisefill are created by various authors who have
+        released their work into the public domain. Noisefill does <b>NOT</b>{" "}
+        imply endorsement or affiliation with any of the authors. To view
         attribution,{" "}
         <Link href="/credits" className="text-blue-500 hover:underline">
           click here

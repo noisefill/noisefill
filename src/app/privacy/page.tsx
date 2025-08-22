@@ -107,6 +107,20 @@ export default function Tos() {
               and/or other device metadata may be collected.
             </td>
           </tr>
+
+          {/* Audio storage */}
+          <tr>
+            <td className="px-4 py-2 font-semibold">Audio Storage</td>
+            <td className="px-4 py-2">
+              We use Cloudflare R2 to store audio files.
+            </td>
+            <td className="px-4 py-2">
+              IP address, device metadata, request headers
+            </td>
+            <td className="px-4 py-2">
+              Cloudflare R2 is subject to Cloudflare's privacy policy.
+            </td>
+          </tr>
         </tbody>
       </table>
       <br />
