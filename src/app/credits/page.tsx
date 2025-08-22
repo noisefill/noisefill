@@ -12,16 +12,10 @@ export default async function Credits() {
     <div className="w-full max-w-lg mx-auto py-12">
       <h1 className="text-2xl font-bold">Credits</h1>
       <p className="text-lg pt-1 font-medium">
-        Soundscapes on Noisefill are created by various authors on{" "}
-        <a
-          href="https://freesound.org"
-          target="_blank"
-          className="text-blue-500 hover:underline"
-        >
-          freesound.org
-        </a>{" "}
-        who have released their work into the public domain. Noisefill would not
-        be possible without their generous work.
+        Soundscapes on Noisefill are created by various authors who have
+        released their work into the public domain. Noisefill would not be
+        possible without their generous work. Noisefill does not imply
+        endorsement or affiliation with any of the authors.
       </p>
       <br />
       <div className="flex flex-col gap-2">

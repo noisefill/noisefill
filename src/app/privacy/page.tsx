@@ -77,7 +77,7 @@ export default function Tos() {
             </td>
             <td className="px-4 py-2">
               Basic web analytics (page views, visitor counts, etc.),
-              performance data, error logging, interactions, surveys,
+              performance data, error logging, interactions, session replays,
               experiments to test new features, and other uses.
             </td>
             <td className="px-4 py-2">
