@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
-import { TooltipProvider } from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
   title: "Noisefill",

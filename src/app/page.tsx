@@ -7,6 +7,17 @@ import { Input } from "@/components/ui/input";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import FeaturebaseMessenger from "@/components/Featurebase";
+import { unstable_cache } from "next/cache";
+
+const getCachedAudios = unstable_cache(
+  async () => {
+    return await db.select().from(audios).orderBy(audios.name);
+  },
+  ["audios"],
+  { revalidate: 60 * 60 * 2 }
+);
+
+export const revalidate = 60 * 60 * 2;
 
 export async function generateMetadata() {
   const session = await auth();
@@ -27,8 +38,7 @@ export async function generateMetadata() {
 }
 
 export default async function Page() {
-  const audioList = await db.select().from(audios).orderBy(audios.name);
-  const session = await auth();
+  const audioList = await getCachedAudios();
 
   return (
     <div className="w-full max-w-2xl mx-auto py-9 p-6">
@@ -45,7 +55,6 @@ export default async function Page() {
           >
             <Input type="text" placeholder="Search" name="query" />
           </form>
-          {/* <AuthButton session={session ?? null} /> */}
         </div>
       </div>
       <div className="w-full flex flex-col gap-1 pt-1">
