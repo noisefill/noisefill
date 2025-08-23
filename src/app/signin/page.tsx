@@ -146,29 +146,6 @@ export default async function SignIn() {
             </Button>
           </form>
         </div>
-        <div className="flex gap-4 items-center">
-          <div className="w-full h-[1px] bg-neutral-300" />
-          <span className="text-sm text-muted-foreground">or</span>
-          <div className="w-full h-[1px] bg-neutral-300" />
-        </div>
-        <form
-          action={async (formData) => {
-            "use server";
-            await signIn("loops", formData);
-          }}
-        >
-          <label
-            htmlFor="email"
-            className="text-sm font-medium w-[350px] pb-0.75 text-left block"
-          >
-            Email address
-          </label>
-          <Input id="email" type="text" name="email" className="w-full" />
-          <br />
-          <Button type="submit" className="w-full">
-            Continue
-          </Button>
-        </form>
       </div>
     </div>
   );
