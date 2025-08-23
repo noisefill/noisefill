@@ -17,8 +17,6 @@ const getCachedAudios = unstable_cache(
   { revalidate: 60 * 60 * 2 }
 );
 
-export const revalidate = 60 * 60 * 2;
-
 export async function generateMetadata() {
   const session = await auth();
 
