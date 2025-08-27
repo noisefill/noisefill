@@ -1,0 +1,201 @@
+[
+  {
+    "name": "Underwater",
+    "audioURL": "https://cdn.noisefill.com/Underwater.mp3",
+    "emoji": "🐠",
+    "attribution": "Underwater Ambience by Fission9 -- https://freesound.org/s/504641/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20One%20Night%20In%20France%20(%20Lofi%2C%20Nostalgic%2C%20Chill%20).mp3",
+    "attribution": "One Night In France ( Lofi, Nostalgic, Chill ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi -- \nLicense: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill", "focus"]
+  },
+  {
+    "name": "Seagulls",
+    "audioURL": "https://cdn.noisefill.com/Seagulls.mp3",
+    "emoji": "🐦",
+    "attribution": "Harbour_Seagulls_Day_2.WAV by ivolipa -- https://freesound.org/s/328807/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "name": "Crickets",
+    "audioURL": "https://cdn.noisefill.com/Crickets.mp3",
+    "emoji": "🦗",
+    "attribution": "crickets by FreethinkerAnon -- https://freesound.org/s/129678/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "name": "Rain",
+    "audioURL": "https://cdn.noisefill.com/Rain.wav",
+    "emoji": "💦",
+    "attribution": "Rain heavy 2 (rural) by jmbphilmes -- https://freesound.org/s/200272/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "name": "Bubbles",
+    "audioURL": "https://cdn.noisefill.com/Bubbles.mp3",
+    "emoji": "🫧",
+    "attribution": "Dry Ice Bubbling in Water by unfa -- https://freesound.org/s/504930/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/Vibe.flac",
+    "attribution": "Good Vibe Background Music by Seth_Makes_Sounds -- https://freesound.org/s/661782/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat", "energetic"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/upbeat-lofi.mp3",
+    "attribution": "Lofi Guitar Beat 70bpm by Seth_Makes_Sounds -- https://freesound.org/s/659278/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat"]
+  },
+  {
+    "name": "Wind",
+    "audioURL": "https://cdn.noisefill.com/Wind.wav",
+    "emoji": "💨",
+    "attribution": "wind.ogg by sleepCircle -- https://freesound.org/s/22331/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "name": "Ocean",
+    "audioURL": "https://cdn.noisefill.com/Ocean.flac",
+    "emoji": "🌊",
+    "attribution": "Seawash (calm)  by craiggroshek -- https://freesound.org/s/176617/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/660390__seth_makes_sounds__cute-lofi-instrumental.flac",
+    "attribution": "Cute Lofi Instrumental by Seth_Makes_Sounds -- https://freesound.org/s/660390/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat"]
+  },
+  {
+    "name": "River",
+    "audioURL": "https://cdn.noisefill.com/River.flac",
+    "emoji": "🪨",
+    "attribution": "Relaxing, Mountains, Rivers, Streams, Running Water by INNORECORDS -- https://freesound.org/s/469009/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/Morning.mp3",
+    "attribution": "Lo-Fi - Morning Breeze by noel0319 -- https://freesound.org/s/678119/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat", "chill", "focus", "energetic"]
+  },
+  {
+    "name": "Desert",
+    "audioURL": "https://cdn.noisefill.com/Desert.wav",
+    "emoji": "🌵",
+    "attribution": "Desert Simple.wav by Proxima4 -- https://freesound.org/s/104320/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/uplifting.mp3",
+    "attribution": "Lofi - keepin the pace.wav by noel0319 -- https://freesound.org/s/680399/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat", "energetic"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Tranquil%20Mindscape%20(%20Lofi%20%2C%20Happy%20%2C%20Reflection%20).mp3",
+    "attribution": "Tranquil Mindscape ( Lofi , Happy , Reflection ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi -- \nLicense: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat", "chill", "focus"]
+  },
+  {
+    "name": "Fire",
+    "audioURL": "https://cdn.noisefill.com/Fire.wav",
+    "emoji": "🔥",
+    "attribution": "Bonfire by forfie -- https://freesound.org/s/364992/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Bubbles%20(%20Lofi%20%2C%20Bright%20%2C%20Relaxed%20).mp3",
+    "attribution": "Bubbles ( Lofi , Bright , Relaxed ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat", "chill", "focus"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/Rising.flac",
+    "attribution": "Tranquil Lofi Beat by Seth_Makes_Sounds -- https://freesound.org/s/688285/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/655615__seth_makes_sounds__happy-hip-hop-beat.flac",
+    "attribution": "Happy Hip Hop Beat by Seth_Makes_Sounds -- https://freesound.org/s/655615/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Canon%20Event%20(%20Lofi%20%2C%20Sad%20%2C%20Reflection%20).mp3",
+    "attribution": "Canon Event ( Lofi , Sad , Reflection ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill", "focus"]
+  },
+  {
+    "name": "Forest",
+    "audioURL": "https://cdn.noisefill.com/Forest.wav",
+    "emoji": "🌴",
+    "attribution": "Birds In Spring (Scotland) by BurghRecords -- https://freesound.org/s/463903/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/Deep.flac",
+    "attribution": "Vanilla Lofi Beat by Seth_Makes_Sounds -- https://freesound.org/s/691510/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["energetic"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/Chill Lofi.mp3",
+    "attribution": "Chill Lofi - lost stars.wav by noel0319 -- https://freesound.org/s/680400/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/655516__seth_makes_sounds__lofi-fusion-background-music.flac",
+    "attribution": "Lofi Fusion Background Music by Seth_Makes_Sounds -- https://freesound.org/s/655516/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["upbeat", "energetic"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/Piano.flac",
+    "attribution": "Chill Lofi Piano Beat by Seth_Makes_Sounds -- https://freesound.org/s/709779/ -- License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["energetic"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Moon%20Unit%20(%20Lofi%20%2C%20Reflection%20%2C%20Dreamy%20).mp3",
+    "attribution": "Moon Unit ( Lofi , Reflection , Dreamy ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill", "focus"]
+  },
+  {
+    "name": "Arctic",
+    "audioURL": "https://cdn.noisefill.com/Arctic.mp3",
+    "emoji": "❄️",
+    "attribution": "Wind__Artic__Cold.wav by cobratronik -- https://freesound.org/s/117136/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20When%20Time%20Called%20Me%20Darling%20(%20Lofi%2C%20Relaxing%2C%20Chill).mp3",
+    "attribution": "When Time Called Me Darling ( Lofi, Relaxing, Chill) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill", "focus"]
+  },
+  {
+    "name": "Kettle",
+    "audioURL": "https://cdn.noisefill.com/Kettle.wav",
+    "emoji": "☕️",
+    "attribution": "water boil.wav by fryzu82 -- https://freesound.org/s/142333/ -- License: Creative Commons 0",
+    "type": "soundscape"
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Still%20Life%20(%20Lofi%20%2C%20Chill%20%2C%20Nostalgic%20).mp3",
+    "attribution": "Still Life ( Lofi , Chill , Nostalgic ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill", "focus"]
+  }
+]

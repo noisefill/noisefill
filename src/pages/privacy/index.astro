@@ -1,0 +1,148 @@
+---
+import PostHog from "../../components/posthog.astro";
+import "../../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta
+      name="description"
+      content="A super simple privacy policy that explains how we use your data."
+    />
+    <meta
+      name="keywords"
+      content="privacy, policy, noisefill, lo-fi, soundscapes, focus, calm, energy, radio, free, website, music, noise, ambient, chill, study, work, relax, sleep, meditation, productivity, relaxation, focus, calm, energy, radio, free, website, music, noise, ambient, chill, study, work, relax, sleep, meditation, productivity, relaxation"
+    />
+    <meta name="author" content="Noisefill" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="yandexbot" content="index, follow" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://noisefill.com/privacy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://noisefill.com/privacy" />
+    <meta property="og:title" content="Privacy policy - Noisefill" />
+    <meta
+      property="og:description"
+      content="A super simple privacy policy that explains how we use your data."
+    />
+    <meta property="og:image" content="/og.webp" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://noisefill.com/privacy" />
+    <meta property="twitter:title" content="Privacy policy - Noisefill" />
+    <meta
+      property="twitter:description"
+      content="A super simple privacy policy that explains how we use your data."
+    />
+    <meta property="twitter:image" content="/og.webp" />
+    <title>Privacy policy - Noisefill</title>
+    <PostHog />
+  </head>
+  <body class="dark:bg-[#111111]">
+    <div class="w-full max-w-full mx-auto py-12 px-8">
+      <h1 class="text-2xl font-bold">Privacy policy</h1>
+      <p class="text-sm text-muted-foreground pt-1 font-medium">
+        A super simple privacy policy that explains how we use your data.
+      </p>
+      <table
+        class="min-w-full border border-gray-300 divide-y divide-gray-200 rounded-md mt-2 dark:border-gray-700 dark:divide-gray-700"
+      >
+        <thead class="bg-gray-50 dark:bg-gray-800">
+          <tr>
+            <th
+              class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300"
+            >
+              Purpose
+            </th>
+            <th
+              class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300"
+            >
+              Description
+            </th>
+            <th
+              class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300"
+            >
+              Types of Data Collected
+            </th>
+            <th
+              class="px-4 py-2 text-left text-sm font-medium text-gray-700 dark:text-gray-300"
+            >
+              How Data is Processed
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="bg-white divide-y divide-gray-200 dark:bg-gray-900 dark:divide-gray-700"
+        >
+          {/* Hosting */}
+          <tr>
+            <td class="px-4 py-2 font-semibold">Hosting</td>
+            <td class="px-4 py-2">
+              We host our website on Cloudflare Pages which we also use to route
+              traffic to our analytics & monitoring.
+            </td>
+            <td class="px-4 py-2">
+              IP addresses, device metadata, request headers
+            </td>
+            <td class="px-4 py-2">
+              Collected and processed by Cloudflare for security, performance,
+              and infrastructure purposes. Data is subject to Cloudflare's
+              privacy policy.
+            </td>
+          </tr>
+
+          {/* Analytics & Monitoring */}
+          <tr>
+            <td class="px-4 py-2 font-semibold">Analytics & Monitoring</td>
+            <td class="px-4 py-2">
+              Usage tracking and monitoring via PostHog.
+            </td>
+            <td class="px-4 py-2">
+              Basic web analytics (page views, visitor counts, etc.),
+              performance data, error logging, interactions, session replays,
+              experiments to test new features, and other uses.
+            </td>
+            <td class="px-4 py-2">
+              Collected and processed by PostHog for insights and product
+              improvement/development.
+              <br />
+              <br />
+              We make efforts to anonymize data, including by configuring PostHog
+              to not store the last two octets of the IP address. Data is subject
+              to PostHog's privacy policy.
+            </td>
+          </tr>
+
+          {/* Audio storage */}
+          <tr>
+            <td class="px-4 py-2 font-semibold">Audio Storage</td>
+            <td class="px-4 py-2">
+              We use Cloudflare R2 to store audio files.
+            </td>
+            <td class="px-4 py-2">
+              IP address, device metadata, request headers
+            </td>
+            <td class="px-4 py-2">
+              Cloudflare R2 is subject to Cloudflare's privacy policy.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <p class="text-sm text-muted-foreground">
+        To exercise your privacy rights in certain countries (right of access,
+        right to be forgotten, etc.) please contact us at{" "}
+        <a href="mailto:hi@noisefill.com" class="text-blue-500">
+          hi@noisefill.com
+        </a>{" "}
+        and we will try to do what we can ourselves. In some cases, you may need
+        to contact our third party providers directly.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,307 @@
+---
+import PostHog from "../components/posthog.astro";
+import "../styles/global.css";
+import audioList from "../audios.json";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta
+      name="description"
+      content="Noisefill is a website that provides lo-fi and soundscapes for focus, calm, or energy. It's completely free to use."
+    />
+    <meta
+      name="keywords"
+      content="lo-fi, soundscapes, focus, calm, energy, radio, free, website, music, noise, ambient, chill, study, work, relax, sleep, meditation, productivity, relaxation, focus, calm, energy, radio, free, website, music, noise, ambient, chill, study, work, relax, sleep, meditation, productivity, relaxation"
+    />
+    <meta name="author" content="Noisefill" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="yandexbot" content="index, follow" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://noisefill.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://noisefill.com" />
+    <meta
+      property="og:title"
+      content="Noisefill: Lo-fi Radio for Focus, Calm, and Energy"
+    />
+    <meta
+      property="og:description"
+      content="Noisefill is a website that provides lo-fi and soundscapes for focus, calm, or energy. It's completely free to use."
+    />
+    <meta property="og:image" content="/og.webp" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://noisefill.com" />
+    <meta
+      property="twitter:title"
+      content="Noisefill: Lo-fi Radio for Focus, Calm, and Energy"
+    />
+    <meta
+      property="twitter:description"
+      content="Noisefill is a website that provides lo-fi and soundscapes for focus, calm, or energy. It's completely free to use."
+    />
+    <meta property="twitter:image" content="/og.webp" />
+    <title>Noisefill: Lo-fi Radio for Focus, Calm, and Energy</title>
+    <PostHog />
+  </head>
+  <body class="dark:bg-[#111111]">
+    <div class="w-full max-w-2xl mx-auto py-9 p-6">
+      <div class="w-full flex justify-between gap-4 items-center h-10 px-2">
+        <h1 class="text-2xl font-bold">Noisefill</h1>
+        <audio controls autoplay id="audio-player" class="rounded-lg"></audio>
+      </div>
+      <section class="w-full flex flex-col gap-1 pt-1">
+        <h2 class="text-lg font-semibold px-2">Lo-fi beats</h2>
+        <div class="flex flex-wrap gap-0">
+          <button
+            class="flex flex-col gap-1.5 p-2 hover:bg-foreground/10 w-fit rounded-[14px] transition-all cursor-pointer select-none group"
+            id="focusLofi"
+          >
+            <img
+              src="/focus.webp"
+              alt="Focus"
+              class="w-30 aspect-square h-30 rounded-[6px] group-hover:brightness-85 transition-all"
+            />
+            <span
+              class="text-foreground text-sm font-semibold group-hover:brightness-85 transition-all text-left"
+            >
+              Focus
+              <span class="sr-only">Lo-fi</span>
+            </span>
+          </button>
+          <button
+            class="flex flex-col gap-1.5 p-2 hover:bg-foreground/10 w-fit rounded-[14px] transition-all cursor-pointer select-none group"
+            id="chillLofi"
+          >
+            <img
+              src="/chill.webp"
+              alt="Chill"
+              class="w-30 aspect-square h-30 rounded-[6px] group-hover:brightness-85 transition-all"
+            />
+            <span
+              class="text-foreground text-sm font-semibold group-hover:brightness-85 transition-all text-left"
+            >
+              Chill
+              <span class="sr-only">Lo-fi</span>
+            </span>
+          </button>
+          <button
+            class="flex flex-col gap-1.5 p-2 hover:bg-foreground/10 w-fit rounded-[14px] transition-all cursor-pointer select-none group"
+            id="upbeatLofi"
+          >
+            <img
+              src="/upbeat.webp"
+              alt="Upbeat"
+              class="w-30 aspect-square h-30 rounded-[6px] group-hover:brightness-85 transition-all"
+            />
+            <span
+              class="text-foreground text-sm font-semibold group-hover:brightness-85 transition-all text-left"
+            >
+              Upbeat
+              <span class="sr-only">Lo-fi</span>
+            </span>
+          </button>
+          <button
+            class="flex flex-col gap-1.5 p-2 hover:bg-foreground/10 w-fit rounded-[14px] transition-all cursor-pointer select-none group"
+            id="energeticLofi"
+          >
+            <img
+              src="/energetic.webp"
+              alt="Energetic"
+              class="w-30 aspect-square h-30 rounded-[6px] group-hover:brightness-85 transition-all"
+            />
+            <span
+              class="text-foreground text-sm font-semibold group-hover:brightness-85 transition-all text-left"
+            >
+              Energetic
+              <span class="sr-only">Lo-fi</span>
+            </span>
+          </button>
+        </div>
+      </section>
+      <br />
+      <section class="w-full flex flex-col gap-1 pt-1 px-2">
+        <h2 class="text-lg font-semibold">Soundscapes</h2>
+        <div class="flex flex-wrap gap-2">
+          {
+            audioList
+              .filter((audio) => audio.type === "soundscape")
+              .map((audio) => (
+                <button
+                  data-audio-url={audio.audioURL}
+                  class="soundscape inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                >
+                  {audio.emoji} {audio.name}
+                </button>
+              ))
+          }
+        </div>
+      </section>
+      <br />
+      <p class="text-sm text-muted-foreground px-2">
+        Soundscapes on Noisefill are created by various authors who have
+        released their work into the public domain. Noisefill does <b>NOT</b>{
+          " "
+        }
+        imply endorsement or affiliation with any of the authors. <a
+          href="/credits"
+          class="text-foreground hover:underline"
+        >
+          You can view credits here.</a
+        >
+      </p>
+      <footer class="text-sm text-muted-foreground pt-2 flex gap-1.25 px-2">
+        <a href="/privacy" class="hover:text-foreground"> Privacy </a>
+        <span>•</span>
+        <a
+          href="mailto:hi@noisefill.com"
+          target="_blank"
+          class="hover:text-foreground"
+        >
+          Contact us
+        </a>
+        <span>•</span>
+        <a
+          href="https://github.com/noisefill/noisefill"
+          target="_blank"
+          class="hover:text-foreground"
+        >
+          GitHub repo
+        </a>
+      </footer>
+    </div>
+
+    <script define:vars={{ audioList }}>
+      // Queue management state
+      let currentQueue = [];
+      let currentIndex = 0;
+      let isQueueMode = false;
+      let currentTag = null;
+
+      // Shuffle function
+      function shuffleArray(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+      }
+
+      // Play soundscape with looping
+      function playSoundscape(audioURL) {
+        const audioPlayer = document.querySelector("#audio-player");
+        if (audioPlayer) {
+          // Clear queue mode
+          isQueueMode = false;
+          currentQueue = [];
+          currentTag = null;
+
+          // Set up looping for soundscapes
+          audioPlayer.loop = true;
+          audioPlayer.src = audioURL;
+          audioPlayer.play();
+        }
+      }
+
+      // Play lo-fi queue based on tag
+      function playLofiQueue(tag) {
+        // Filter lo-fi audios by tag
+        const filteredAudios = audioList.filter(
+          (audio) =>
+            audio.type === "lofi" && audio.tags && audio.tags.includes(tag)
+        );
+
+        if (filteredAudios.length === 0) {
+          console.warn(`No lo-fi audios found for tag: ${tag}`);
+          return;
+        }
+
+        // Set up queue
+        currentQueue = shuffleArray(filteredAudios);
+        currentIndex = 0;
+        isQueueMode = true;
+        currentTag = tag;
+
+        // Start playing the queue
+        playCurrentQueueItem();
+      }
+
+      // Play current item in queue
+      function playCurrentQueueItem() {
+        if (!isQueueMode || currentQueue.length === 0) return;
+
+        const audioPlayer = document.querySelector("#audio-player");
+        if (audioPlayer) {
+          // Disable looping for queue mode
+          audioPlayer.loop = false;
+          audioPlayer.src = currentQueue[currentIndex].audioURL;
+          audioPlayer.play();
+        }
+      }
+
+      // Move to next item in queue
+      function playNextInQueue() {
+        if (!isQueueMode || currentQueue.length === 0) return;
+
+        currentIndex++;
+
+        // If we've reached the end of the queue, shuffle and restart
+        if (currentIndex >= currentQueue.length) {
+          currentQueue = shuffleArray(currentQueue);
+          currentIndex = 0;
+        }
+
+        playCurrentQueueItem();
+      }
+
+      // Set up audio player event listeners when DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        const audioPlayer = document.querySelector("#audio-player");
+
+        if (audioPlayer) {
+          // Handle song end in queue mode
+          audioPlayer.addEventListener("ended", function () {
+            if (isQueueMode) {
+              playNextInQueue();
+            }
+            // Note: soundscapes will loop automatically due to loop=true
+          });
+
+          // Handle errors
+          audioPlayer.addEventListener("error", function () {
+            console.error("Audio playback error");
+            if (isQueueMode) {
+              playNextInQueue();
+            }
+          });
+        }
+      });
+
+      document.getElementById("focusLofi").addEventListener("click", () => {
+        playLofiQueue("focus");
+      });
+      document.getElementById("chillLofi").addEventListener("click", () => {
+        playLofiQueue("chill");
+      });
+      document.getElementById("upbeatLofi").addEventListener("click", () => {
+        playLofiQueue("upbeat");
+      });
+      document.getElementById("energeticLofi").addEventListener("click", () => {
+        playLofiQueue("energetic");
+      });
+
+      document.querySelectorAll(".soundscape").forEach((button) => {
+        button.addEventListener("click", () => {
+          playSoundscape(button.dataset.audioUrl);
+        });
+      });
+    </script>
+  </body>
+</html>
