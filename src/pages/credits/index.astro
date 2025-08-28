@@ -1,0 +1,77 @@
+---
+import PostHog from "../../components/posthog.astro";
+import "../../styles/global.css";
+import audioList from "../../audios.json";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta
+      name="description"
+      content="Credits for the audio files used on Noisefill. We curate various public domain audio files across the internet to make them easily accessible."
+    />
+    <meta
+      name="keywords"
+      content="credits, cc0, holiznacc0, seth_makes_sounds, noel0319, noisefill, lo-fi, soundscapes, focus, calm, energy, radio, free, website, music, noise, ambient, chill, study, work, relax, sleep, meditation, productivity, relaxation, focus, calm, energy, radio, free, website, music, noise, ambient, chill, study, work, relax, sleep, meditation, productivity, relaxation"
+    />
+    <meta name="author" content="Noisefill" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="yandexbot" content="index, follow" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://noisefill.com/credits" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://noisefill.com/credits" />
+    <meta property="og:title" content="Credits - Noisefill" />
+    <meta
+      property="og:description"
+      content="Credits for the audio files used on Noisefill. We curate various public domain audio files across the internet to make them easily accessible."
+    />
+    <meta property="og:image" content="/og.webp" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://noisefill.com/credits" />
+    <meta property="twitter:title" content="Credits - Noisefill" />
+    <meta
+      property="twitter:description"
+      content="Credits for the audio files used on Noisefill. We curate various public domain audio files across the internet to make them easily accessible."
+    />
+    <meta property="twitter:image" content="/og.webp" />
+    <title>Credits - Noisefill</title>
+    <PostHog />
+  </head>
+  <body class="dark:bg-[#111111]">
+    <div class="w-full max-w-full mx-auto py-12 px-8">
+      <h1 class="text-2xl font-bold">Credits</h1>
+      <p class="text-sm text-muted-foreground pt-1 font-medium">
+        Credits for the audio files used on Noisefill. We curate various public
+        domain audio files across the internet to make them easily accessible.
+        We generalize some of the audio tracks in this list because we don't
+        give lo-fi tracks a name.
+      </p>
+      <div class="mt-4">
+        <h2 class="text-lg font-bold">Audios</h2>
+        <ul class="list-none">
+          {
+            audioList.map((file) => (
+              <li>
+                <span class="font-medium">
+                  {file.name ||
+                    "One of the lo-fi audios in category " +
+                      (file.tags ? file.tags.join(", ") : "")}
+                </span>
+                <span class="text-sm text-muted-foreground">
+                  {file.attribution}
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
