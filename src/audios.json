@@ -197,5 +197,53 @@
     "attribution": "Still Life ( Lofi , Chill , Nostalgic ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
     "type": "lofi",
     "tags": ["chill", "focus"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Waiting%20Around%20(%20LoFi%20%2C%20Calm%20).mp3",
+    "attribution": "Waiting Around ( LoFi , Calm ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["focus", "calm"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Yet%20Again%20(%20LoFi%20%2C%20Peaceful%20).mp3",
+    "attribution": "Yet Again ( LoFi , Peaceful ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["focus", "chill"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Warm%20Fuzz%20(%20LoFi%20%2C%20Retro%20).mp3",
+    "attribution": "Warm Fuzz ( LoFi , Retro ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill", "focus"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20When%20I%20Was%20Human%20(%20LoFi%20%2C%20Chill%20).mp3",
+    "attribution": "When I Was Human ( LoFi , Chill ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill", "focus", "upbeat"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Shimmer%20(%20LoFi%20%2C%20Chill%20).mp3",
+    "attribution": "Shimmer ( LoFi , Chill ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Theta%20Frequency%20(%20Lofi%20%2C%20Chill%20%2C%20Calm%20).mp3",
+    "attribution": "Theta Frequency ( Lofi , Chill , Calm ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["focus", "chill"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Tokyo%20Sunset%20(%20Lofi%20%2C%20Peaceful%20%2C%20Soft%20).mp3",
+    "attribution": "Tokyo Sunset ( Lofi , Peaceful , Soft ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["focus", "chill"]
+  },
+  {
+    "audioURL": "https://cdn.noisefill.com/HoliznaCC0%20-%20Lucid%20(%20Lofi%20%2C%20Dreamy%20%2C%20Chill%20).mp3",
+    "attribution": "Lucid ( Lofi , Dreamy , Chill ) by HoliznaCC0 -- https://freemusicarchive.org/music/holiznacc0/public-domain-lofi --  License: Creative Commons 0",
+    "type": "lofi",
+    "tags": ["chill", "focus"]
   }
 ]
